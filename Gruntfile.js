@@ -1,8 +1,8 @@
 /*
- * grunt-html-validation
- * https://github.com/praveen/grunt-html-validation
+ * grunt-jshint-extended
+ * https://github.com/vikash-bhardwaj/grunt-jshint-extended
  *
- * Copyright (c) 2013 - 2014 praveenvijayan
+ * Copyright (c) 2015 Vikash Bhardwaj
  * Licensed under the MIT license.
  */
 
