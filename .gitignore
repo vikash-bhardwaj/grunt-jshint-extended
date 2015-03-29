@@ -1,4 +1,26 @@
-.architect
-bootstrap.json
-build/
-ext/
+# Logs
+logs
+*.log
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Untracked files:
+# Folders/Files generated for Each validated JS file generated during this process.
+**/temp/**
+**/tempjs/**
+**/errors
+**/*.min.js
+tmp
+
+# MAC Extra files created.
+.DS_Store
+**/.DS_Store
+**/.DS_Store/
