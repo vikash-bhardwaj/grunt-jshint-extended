@@ -1,8 +1,8 @@
 # grunt-jshint-extended
 Repository for grunt-jshint-extended - a grunt plug-in to have some extended options over [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) plug-in. It provides you different custom tasks to vlidate your JS files which enable developers to have more freedom like:
 
-	- Validating all JS files at once will not generate a single report rather it will generate separate reports for each file with their names at configured path. This will be more structured than a single file.
-	- Other benefits includes that we can validate only specific JS lines of code in a given JS file and not the whole JS file. These options can be helpful for existing projects where we need to validate only new/specific code and not the whole JS.
+  - Validating all JS files at once will not generate a single report rather it will generate separate reports for each file with their names at configured path. This will be more structured than a single file.
+  - Other benefits includes that we can validate only specific JS lines of code in a given JS file and not the whole JS file. These options can be helpful for existing projects where we need to validate only new/specific code and not the whole JS.
 
 Please read more about available tasks <a href = "#user-content-tasks" >below</a>.
 	
