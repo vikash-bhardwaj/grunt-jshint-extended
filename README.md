@@ -4,7 +4,7 @@ Repository for grunt-jshint-extended - a grunt plug-in to have some extended opt
 	- Validating all JS files at once will not generate a single report rather it will generate separate reports for each file with their names at configured path. This will be more structured than a single file.
 	- Other benefits includes that we can validate only specific JS lines of code in a given JS file and not the whole JS file. These options can be helpful for existing projects where we need to validate only new/specific code and not the whole JS.
 
-Please read more about available tasks <a href = "#tasks" >below</a>.
+Please read more about available tasks <a href = "#user-content-tasks" >below</a>.
 	
 ## Getting Started
 This package requires Grunt `~0.4.1`
@@ -72,7 +72,7 @@ Type: `Boolean` <br/>
 Default value: `'true'`
 Setting it `false` will not delete the temp JS file from root folder. This property works only with `validatejslines` custom task.
 
-## <div id="tasks">Tasks Available</div>
+## Tasks Available
 
 ### validatejslines
 Running 'validatejslines' task by `grunt validatejslines` command or by selecting option `Validate specific Lines of js file` from above mentioned default 'grunt' task will validate only Lines of Code for provided one JS file in prompted Input Textbox with rules mentioned in '.jshintrc' file. This task will Prompt developer to provide JS file name with relative path to your root directory followed by line ranges to be validated.
