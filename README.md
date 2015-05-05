@@ -72,7 +72,7 @@ Type: `Boolean` <br/>
 Default value: `'true'`
 Setting it `false` will not delete the temp JS file from root folder. This property works only with `validatejslines` custom task.
 
-## <div>Tasks Available</div>
+## <div id="tasks">Tasks Available</div>
 
 ### validatejslines
 Running 'validatejslines' task by `grunt validatejslines` command or by selecting option `Validate specific Lines of js file` from above mentioned default 'grunt' task will validate only Lines of Code for provided one JS file in prompted Input Textbox with rules mentioned in '.jshintrc' file. This task will Prompt developer to provide JS file name with relative path to your root directory followed by line ranges to be validated.
