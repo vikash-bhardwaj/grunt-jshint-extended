@@ -18,7 +18,12 @@ node_modules
 **/tempjs/**
 **/errors
 **/*.min.js
+**/js/**
+**/js_errors/**
 tmp
+
+# .jshintrc file
+.jshintrc
 
 # MAC Extra files created.
 .DS_Store
