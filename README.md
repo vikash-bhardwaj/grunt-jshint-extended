@@ -42,7 +42,7 @@ jshintextended: {
         reporter: reporter,
         // JS Validation rules are configured in .jshintrc file.
         jshintrc: '.jshintrc',
-        // This is the extra Object which needs to be set with `jshint` options.
+        // This is the extra Object which needs to be set with 'jshint' options.
         jshintExtraOpts: {
             errorReportDir: "js_errors/",
             removeTempFile: true
