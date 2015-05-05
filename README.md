@@ -50,7 +50,7 @@ jshintextended: {
     }
 }
 ```
-<b>Note:</b> For other standard JSHINT options please refer to [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+**Note:** For other standard JSHINT options please refer to [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
 
 ### Options
 
