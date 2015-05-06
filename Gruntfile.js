@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             all: ['js/**/*.js', '!js/plugins/**/*.js'],
             options: {
                 // This will generate the report in HTML format.
-                reporter: reporter,
+                reporter: require('jshint-html-reporter'),
                 // JS Validation rules are configured in .jshintrc file.
                 jshintrc: '.jshintrc',
                 jshintExtraOpts: {
