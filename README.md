@@ -39,7 +39,7 @@ jshintextended: {
     all: ['js/**/*.js', '!js/plugins/**/*.js'],
     options: {
         // This will generate the report in HTML format.
-        reporter: reporter,
+        reporter: require('jshint-html-reporter'),
         // JS Validation rules are configured in .jshintrc file.
         jshintrc: '.jshintrc',
         // This is the extra Object which needs to be set with 'jshint' options.
