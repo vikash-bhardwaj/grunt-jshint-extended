@@ -1,5 +1,5 @@
 # grunt-jshint-extended
-Repository for grunt-jshint-extended - a grunt plug-in to have some extended options over [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) plug-in. It provides you different custom tasks to vlidate your JS files which enable developers to have more freedom like:
+Repository for grunt-jshint-extended - a grunt plug-in to have some extended options over [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) plug-in. It provides you different custom tasks to validate your JS files which enable developers to have more freedom like:
 
   - Validating all JS files at once will not generate a single report rather it will generate separate reports for each file with their names at configured path. This will be more structured than a single file.
   - Other benefits includes that we can validate only specific JS lines of code in a given JS file and not the whole JS file. These options can be helpful for existing projects where we need to validate only new/specific code and not the whole JS.
@@ -32,7 +32,7 @@ grunt.registerTask('default', ['jshintextended']);
 ### Overview
 In your project's Gruntfile, add a section named `jshintextended` to the data object passed into `grunt.initConfig()`.
 
-Task `jshintextended` except any setting which works with [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) plug-in. Catch here is that you have to provide one extra Object in `jshint` options object with name `jshintExtraOpts`, please see below example:
+Task `jshintextended` accept any setting which works with [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) plug-in. Catch here is that you have to provide one extra Object in `jshint` options object with name `jshintExtraOpts`, please see below example:
 
 ```js
 jshintextended: {
