@@ -1,4 +1,9 @@
 /**
+ * grunt-jshint-extended
+ * https://github.com/vikash-bhardwaj/grunt-jshint-extended
+ * Copyright (c) 2015 Vikash Bhardwaj
+ * Licensed under the MIT license.
+ * 
  * Grunt Custom Tasks for JSHint Task
  */
 
