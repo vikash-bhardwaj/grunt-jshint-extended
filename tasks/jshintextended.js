@@ -14,7 +14,8 @@ module.exports = function (grunt) {
             validatejs: "Prompt to take JS file names in a Textbox and validate those files with rules defined in `.jshintrc` file.",
             validateselectedjs: "Prompt to take JS file names with Checkboxes and then validate selected files with the rules defined in `.jshintrc` file.",
             validatejslines: "Prompt to take JS file name with Line Numbers to validate the provided lines with rules defined in `.jshintrc` file."
-        };
+        },
+        currentDir = __dirname;
 
     /**
      * Register the Custom Tasks for JSHINT Advance helper tasks.
@@ -29,8 +30,20 @@ module.exports = function (grunt) {
     }
 
     // Load jshint and prompt tasks so that same can be used by custom task "jshintextended"
+    var localModulePathArr = currentDir.split("/"),
+        localModulePathStr = localModulePathArr.slice(0, localModulePathArr.length-1).join("/"),
+        cwd = process.cwd();
+    
+    /**
+     * This is to change the current working directory temporarily so that it can load the 'grunt-contrib-jshint' and 'grunt-prompt' from the local plug-in.
+     * Once we load the plug-in then again change the current working directory again to original.
+     */
+    process.chdir(localModulePathStr);
+    
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-prompt');
+
+    process.chdir(cwd);
 
     /**
      * Register the Custom Tasks "jshintextended" for jshint.
@@ -77,6 +90,6 @@ module.exports = function (grunt) {
     // LOAD CUSTOM REGISTERED TASKS
     // =======================================================
     // This below command load all the custom tasks created for JSHINT under Lib directory.
-    grunt.loadTasks(__dirname + '/lib');
+    grunt.loadTasks(currentDir + '/lib');
 
 };
