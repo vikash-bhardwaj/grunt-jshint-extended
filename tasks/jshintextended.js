@@ -77,6 +77,6 @@ module.exports = function (grunt) {
     // LOAD CUSTOM REGISTERED TASKS
     // =======================================================
     // This below command load all the custom tasks created for JSHINT under Lib directory.
-    grunt.loadTasks('tasks/lib');
+    grunt.loadTasks(__dirname + '/lib');
 
 };

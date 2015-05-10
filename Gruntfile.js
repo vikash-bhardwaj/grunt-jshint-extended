@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                 // JS Validation rules are configured in .jshintrc file.
                 jshintrc: '.jshintrc',
                 jshintExtraOpts: {
-                    errorReportDir: "js_errors",
+                    errorReportDir: "js_errors/",
                     removeTempFile: true
                 }
             }
