@@ -1,7 +1,7 @@
 {
   "name": "grunt-jshint-extended",
   "description": "Grunt plug-in to have extended options over grunt-contrib-jhsint.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/vikash-bhardwaj/grunt-jshint-extended",
   "author": "Vikash Bhardwaj <vikasbhardwaj7@gmail.com>",
   "repository": {
