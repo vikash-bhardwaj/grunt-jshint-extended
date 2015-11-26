@@ -33,7 +33,7 @@ module.exports = function (grunt) {
     if(currentDir.indexOf("/") >= 0) {
         var localModulePathArr = currentDir.split("/"),
             localModulePathStr = localModulePathArr.slice(0, localModulePathArr.length-1).join("/");
-    } ele {
+    } else {
         var localModulePathArr = currentDir.split("\\"),
             localModulePathStr = localModulePathArr.slice(0, localModulePathArr.length-1).join("\\");
     }
