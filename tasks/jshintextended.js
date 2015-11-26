@@ -30,9 +30,15 @@ module.exports = function (grunt) {
     }
 
     // Load jshint and prompt tasks so that same can be used by custom task "jshintextended"
-    var localModulePathArr = currentDir.split("/"),
-        localModulePathStr = localModulePathArr.slice(0, localModulePathArr.length-1).join("/"),
-        cwd = process.cwd();
+    if(currentDir.indexOf("/") >= 0) {
+        var localModulePathArr = currentDir.split("/"),
+            localModulePathStr = localModulePathArr.slice(0, localModulePathArr.length-1).join("/");
+    } ele {
+        var localModulePathArr = currentDir.split("\\"),
+            localModulePathStr = localModulePathArr.slice(0, localModulePathArr.length-1).join("\\");
+    }
+    
+    var cwd = process.cwd();
     
     /**
      * This is to change the current working directory temporarily so that it can load the 'grunt-contrib-jshint' and 'grunt-prompt' from the local plug-in.
