@@ -103,6 +103,7 @@ Running 'validateselectedjs' task by `grunt validateselectedjs` command will val
 Running 'validatealljs' task by `grunt validatealljs` command will validate all the JS files with rules mentioned in '.jshintrc' file. This will validate all the JS files configured in JSHINT task option with variable '<b>jsFilesToBeValidated</b>'.
 
 ## Release History
+ * 2016-02-27   v0.0.9   Updated peer dependency to support Grunt 1.0.0
  * 2016-02-27   v0.0.8   Fixed the code to support on latest Node/NPM version.
  * 2016-02-26   v0.0.7   Updated Peer Dependency
  * 2015-11-26   v0.0.6   Fixed some Typo.
