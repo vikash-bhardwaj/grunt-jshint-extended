@@ -44,7 +44,14 @@ module.exports = function (grunt) {
      * This is to change the current working directory temporarily so that it can load the 'grunt-contrib-jshint' and 'grunt-prompt' from the local plug-in.
      * Once we load the plug-in then again change the current working directory again to original.
      */
-    process.chdir(localModulePathStr);
+    /** Feb 27, 2016
+     * This Check was added because in latest NPM "grunt-contrib-jshint" module was not getting installed in "grunt-jshint-extended" rather it was getting installed with parent wrapper.
+     * This check will provide to old NPM as well as newer versions
+     */
+    
+    if(grunt.file.isDir(localModulePathStr + "/node_modules/grunt-contrib-jshint")) {
+        process.chdir(localModulePathStr);
+    }
     
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-prompt');
